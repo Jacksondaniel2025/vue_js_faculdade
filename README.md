@@ -40,4 +40,3 @@ Os produtos e preços são exemplos para a atividade. Fotos usadas no catálogo:
 - Tigela: [Josh Withers / Unsplash](https://unsplash.com/photos/a-white-ceramic-bowl-sitting-on-top-of-a-white-table--iNP_kScIkY).
 
 Referência de execução via CDN: [documentação oficial do Vue](https://vuejs.org/guide/quick-start.html#using-vue-from-cdn).
-
