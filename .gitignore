@@ -2,3 +2,5 @@
 teoria/
 *.pdf
 *.zip
+node_modules/
+dist/

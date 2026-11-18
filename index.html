@@ -3,56 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa & Trama | Catálogo</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" defer></script>
-    <script src="product-card.js" defer></script>
-    <script src="app.js" defer></script>
+    <title>Casa &amp; Trama | Catálogo</title>
   </head>
   <body>
-    <div id="app" v-cloak>
-      <header class="site-header">
-        <div class="header-content">
-          <p class="brand">casa <span>&</span> trama</p>
-          <p class="cart-count" aria-live="polite">Itens no carrinho: <strong>{{ cartCount }}</strong></p>
-        </div>
-      </header>
-
-      <main>
-        <section class="intro" aria-labelledby="page-title">
-          <div class="intro-content">
-            <p class="eyebrow">OBJETOS PARA CASA</p>
-            <h1 id="page-title">Um detalhe novo<br>muda o ambiente.</h1>
-            <p>Peças simples para usar e gostar todos os dias.</p>
-          </div>
-        </section>
-
-        <section class="page-content" aria-labelledby="products-title">
-          <div class="section-heading">
-            <div>
-              <p class="section-label">CATÁLOGO</p>
-              <h2 id="products-title">Escolha seus favoritos</h2>
-            </div>
-            <div class="search-field">
-              <label for="product-search">Buscar pelo nome</label>
-              <input id="product-search" type="search" v-model="search" placeholder="Ex.: vaso, cesto, tigela">
-            </div>
-          </div>
-
-          <div class="product-grid" v-if="filteredProducts.length">
-            <product-card
-              v-for="product in filteredProducts"
-              :key="product.id"
-              :name="product.name"
-              :price="product.price"
-              :image="product.image"
-              @add-to-cart="addToCart"
-            ></product-card>
-          </div>
-          <p class="empty-message" v-else>Nenhum produto encontrado.</p>
-        </section>
-      </main>
-    </div>
-    <noscript>Ative o JavaScript para visualizar o catálogo.</noscript>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
